@@ -310,8 +310,9 @@ table, th, td {
 	border: 1px solid #59453C;
 	padding: 0px 10px;
 }
+/*table column layout*/
 .tablehead {
-	background-color: #93A341;
+	background-color: #4c4c4a;
 	text-align: center;
   font-weight: 700;
 }
