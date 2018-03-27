@@ -314,7 +314,7 @@ table, th, td {
 .tablehead {
 	background-color: #4c4c4a;
 	text-align: center;
-  font-weight: 700;
+  	font-weight: 700;
 }
 .tabletitle {
   padding-bottom: 15px;
@@ -349,7 +349,7 @@ td {
   width: 120px;
 }
 .redfont {
-	color: red;
+	color: white;
 }
 .darkredfont {
   color: #d70000;
