@@ -102,6 +102,15 @@ li ol {
   padding-top: 0.6315789474em;
   margin-left: 1.2631578947em;
 }
+
+#download {
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 45px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
 /* Avoid over-padding nested lists */
 li ol,
 li ul,
