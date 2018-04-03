@@ -349,10 +349,10 @@ td {
   width: 120px;
 }
 .redfont {
-	color: white;
+	color: #F0F0F0;
 }
 .darkredfont {
-  color: #FFFFFF;
+  color: #F0F0F0;
 }
 #tablep {
 	width: 80%
