@@ -141,7 +141,7 @@ h4 {
 
 html {
   /* Border for the nav to sit on */
-  border-top: 2.6875em solid #93A341; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+  border-top: 2.6875em solid #4c4c4a; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 nav {
   position: absolute;
