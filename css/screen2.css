@@ -52,7 +52,7 @@ html {
   font-family: "Depot New W00", Helvetica, Arial, sans-serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
-  background-color: #F0F8FF;
+  background-color: #FFD3A2;
   color: #59453C;
 }
 body {
@@ -78,7 +78,7 @@ a {
   border-bottom: 0.05263157895em dotted;
 }
 .preview a {
-  color: #605656;
+  color: #FFCE0B;
 }
 p {
   padding-bottom: 1.2631578947em;
@@ -90,11 +90,8 @@ ol,
 ul {
   padding-bottom: 1.2631578947em;
 }
-ul > li {
-  list-style-type: square;
-}
+
 ol > li {
-  list-style-type: decimal;
   margin-left: 1em;
 }
 li ul,
@@ -102,19 +99,6 @@ li ol {
   padding-top: 0.6315789474em;
   margin-left: 1.2631578947em;
 }
-
-a {
-  text-decoration: none;
-}
-
-#download {
-  margin-top: -20px;
-  margin-bottom: 30px;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 /* Avoid over-padding nested lists */
 li ol,
 li ul,
@@ -135,7 +119,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #E6E6FA;
+  background-color: #F06C94;
   padding: 0.5em 0 0.5em 0.3em;
   margin-bottom: 0.2em;
 }
@@ -145,7 +129,7 @@ h4 {
   font-weight: bold;
   padding-bottom: 1.2631578947em;
 }
-h4 {
+h5 {
   text-transform: none;
   padding-bottom: 0.6315789474em;
 }
@@ -154,7 +138,7 @@ h4 {
 
 html {
   /* Border for the nav to sit on */
-  border-top: 2.6875em solid #E6E6FA; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+  border-top: 2.6875em solid #F06C94; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 nav {
   position: absolute;
@@ -162,9 +146,22 @@ nav {
   top: 0;
   left: 0;
 }
-#links,
 #instructor {
   margin-top: 2.5263157895em;
+}
+#w2,
+#w4,
+#w6,
+#w8,
+#w10,
+#w12,
+#w14,
+#w16,
+#labs_t,
+#pro1_t,
+#pro2_t,
+#pro3_t{
+  background-color: #FFBD73;
 }
 
 /* ========== Modules ========== */
@@ -199,11 +196,11 @@ small,
 nav {
   font-weight: 200;
 }
-.nav {
+.nav{
   margin-left: 0;
   padding-bottom: 0;
 }
-.nav li {
+.nav li{
   float: left;
   width: 25%;
   list-style-type: none;
@@ -215,15 +212,14 @@ nav {
   line-height: 1;
   padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
   color: #333;
-  background-color: #E6E6FA;
+  background-color: #F06C94;
   border-bottom: 0;
 }
-
 #calendar #nav-cal a,
 #projects #nav-pro a,
 #policies #nav-pol a,
-#due_date #nav-dat a {
-  background-color: #DCDCDC;
+#links #nav-lnk a {
+  background-color: #9D6D72;
 }
 
 /* Calendar */
@@ -269,7 +265,7 @@ nav {
 }
 
 .preview {
-  background-color: #93A341;
+  background-color: #FFBD73;
   color: #222;
   padding-top: 1.2631578947em;
   margin-right: -11.3208%; /* 60px / 530px (650-120) */
@@ -323,7 +319,7 @@ table, th, td {
 	padding: 0px 10px;
 }
 .tablehead {
-	background-color: #93A341;
+	background-color: #F06C94;
 	text-align: center;
   font-weight: 700;
 }
@@ -373,11 +369,13 @@ td {
 	margin-left: 30%;
 	margin-right: 30%;
 }
-#h3wide {
+#h3wide,
+#inswide {
+  background-color: #F06C94;
   width: 750px;
 }
 
-/* Policies */ 
+/* Policies */
 
 .indent {
   margin-left: 2em;
@@ -400,6 +398,7 @@ td {
   width: 70%;
 }
 
+
 /* ========== State ========== */
 
 .hasjs .extended {
@@ -408,6 +407,8 @@ td {
 .is-visible .extended {
   display: block;
 }
+/* js tools*/
+
 
 /* Media Queries */
 
@@ -459,9 +460,9 @@ td {
   html {
     padding: 0;
   }
-  header,
-  footer,
-  .primary,
+  #calendar,
+  #policies,
+  #projects,
   #instructor,
   #links {
     padding-left: 14.28571429%; /* 93/651 */
@@ -491,7 +492,7 @@ td {
     width: 42.5%;
     margin-right: 0;
   }
-  
+
   #essential-references {
     position: absolute;
     top: 0px;
@@ -505,27 +506,4 @@ td {
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
   }
-}
-
-/* accordion */
-.accordion {
-  background-color: #F0F8FF;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #E6E6FA;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
 }
