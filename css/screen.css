@@ -52,7 +52,7 @@ html {
   font-family: "Depot New W00", Helvetica, Arial, sans-serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
-  background-color: #BFBFBF;
+  background-color: #F0F8FF;
   color: #59453C;
 }
 body {
@@ -74,11 +74,11 @@ ins {
 /* Links */
 a {
   text-decoration: none;
-  color: #e8e8e1;
+  color: #567448;
   border-bottom: 0.05263157895em dotted;
 }
 .preview a {
-  color: #D3D3D3;
+  color: #FFCE0B;
 }
 p {
   padding-bottom: 1.2631578947em;
@@ -102,6 +102,19 @@ li ol {
   padding-top: 0.6315789474em;
   margin-left: 1.2631578947em;
 }
+
+a {
+  text-decoration: none;
+}
+
+#download {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 /* Avoid over-padding nested lists */
 li ol,
 li ul,
@@ -122,10 +135,9 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #4c4c4a;
+  background-color: #E6E6FA;
   padding: 0.5em 0 0.5em 0.3em;
   margin-bottom: 0.2em;
-  color:#FFFFFF;	
 }
 
 h4 {
@@ -142,7 +154,7 @@ h4 {
 
 html {
   /* Border for the nav to sit on */
-  border-top: 2.6875em solid #4c4c4a; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+  border-top: 2.6875em solid #E6E6FA; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 nav {
   position: absolute;
@@ -197,14 +209,13 @@ nav {
   list-style-type: none;
   padding-bottom: 0;
 }
-/*color of the nvigation bar*/
 .nav a {
   display: block;
   text-align: center;
   line-height: 1;
   padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
-  color: #e8e8e1;
-  background-color:#4c4c4a;
+  color: #333;
+  background-color: #E6E6FA;
   border-bottom: 0;
 }
 
@@ -212,7 +223,7 @@ nav {
 #projects #nav-pro a,
 #policies #nav-pol a,
 #due_date #nav-dat a {
-  background-color: #BFBFBF;
+  background-color: #DCDCDC;
 }
 
 /* Calendar */
@@ -258,7 +269,7 @@ nav {
 }
 
 .preview {
-  background-color: #D3D3D3;
+  background-color: #93A341;
   color: #222;
   padding-top: 1.2631578947em;
   margin-right: -11.3208%; /* 60px / 530px (650-120) */
@@ -276,7 +287,7 @@ nav {
   margin-left: -11.3208%;
 }
 .preview .assigned {
-  background-color: #D3D3D3;
+  background-color: #59453C;
   color: #EEE;
 }
 .preview .assigned small {
@@ -311,17 +322,15 @@ table, th, td {
 	border: 1px solid #59453C;
 	padding: 0px 10px;
 }
-/*table column layout*/
 .tablehead {
-	background-color: #4c4c4a;
+	background-color: #93A341;
 	text-align: center;
-  	font-weight: 700;
+  font-weight: 700;
 }
 .tabletitle {
   padding-bottom: 15px;
   padding-top: 15px;
   border-left: none;
-  color:#FFFFFF;
 }
 #protable {
   margin-bottom: 0;
@@ -351,10 +360,10 @@ td {
   width: 120px;
 }
 .redfont {
-	color: #F0F0F0;
+	color: red;
 }
 .darkredfont {
-  color: #F0F0F0;
+  color: #d70000;
 }
 #tablep {
 	width: 80%
@@ -496,4 +505,27 @@ td {
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
   }
+}
+
+/* accordion */
+.accordion {
+  background-color: #F0F8FF;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #E6E6FA;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
